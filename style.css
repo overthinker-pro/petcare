@@ -87,7 +87,7 @@ nav ul li:hover {
   margin: 15px 0;
   font-size: 15px;
   font-weight: 400;
-  color: rgb(56, 56, 56);
+  color: #383838;
 }
 
 /* homepage buttons */
@@ -155,15 +155,13 @@ nav ul li:hover {
   }
   .main-page-image {
     margin-top: 0;
-    border: 1px solid;
   }
 }
 
-/* /////////// */
-/* About Page */
-/* ///////// */
-.about-page {
-  background-color: yellow;
+/* ///////////////// */
+/* About Page Topbar*/
+/* /////////////// */
+.about-page-topbar {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -175,7 +173,7 @@ nav ul li:hover {
   border-radius: 20px;
   padding: 20px;
   min-width: 60%;
-  margin: 40px 0 30px 0;
+  margin: 40px 0 0 0;
   gap: 20px;
   background: var(--gradient-bg);
 }
@@ -198,4 +196,58 @@ nav ul li:hover {
 }
 .about-nav-card img {
   width: 30px;
+}
+
+
+/* //////////////////////// */
+/* About page main content */
+/* ////////////////////// */
+.about-main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
+    gap: 30px;
+}
+
+.about-image {
+    max-width: 250px;
+}
+
+/* about main page texts div */
+.about-texts {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.about-heading {
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin: 30px 0 15px 0;
+    color: #0e0e0e;
+}
+.about.desc {
+    color: #383838;
+}
+
+/* responsiveness for about page and about top bar*/
+@media (max-width: 900px){
+    .about-navigation  {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .about-texts {
+        text-align: justify;
+    }
+    .about.desc {
+        margin: 0 25px;
+    }
 }
