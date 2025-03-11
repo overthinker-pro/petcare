@@ -479,6 +479,7 @@ nav ul li:hover {
 /* ////////// */
 .contact-us {
     background-color: #dcf3f7;
+    margin-bottom: 50px;
 }
 .contact-head {
     width: 100%;
@@ -505,7 +506,7 @@ nav ul li:hover {
     justify-content: center;
     margin-top: 30px;
     gap: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
 }
 
 .card-detail {
@@ -516,13 +517,22 @@ nav ul li:hover {
     background-color: white;
     padding: 15px 0;
     border-radius: 15px;
-    border: 1px solid #b10e52;
+    border: 2px solid #ff3b8c;
     transition: all 0.2s ease-in-out;
-}
-.card-detail img {
-    width: 70px;
 }
 .card-detail:hover {
     cursor: pointer;
     border: 2px solid #b10e52;
+}
+.card-detail img {
+    width: 70px;
+}
+
+@media (max-width: 1200px) {
+    .contact-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
