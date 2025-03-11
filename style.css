@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* custom properties */
+:root {
+  --gradient-bg: linear-gradient(
+    148deg,
+    rgba(220, 243, 247, 1) 35%,
+    rgba(237, 222, 249, 1) 81%
+  );
+}
+
+/* Home page contents */
+.homepage {
+  background: var(--gradient-bg);
+}
+
+/* navbar */
+nav {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+}
+
+.icon {
+  flex: 1;
+}
+.logo-image {
+  width: 120px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 30px;
+}
+nav ul li {
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+nav ul li:hover {
+  cursor: pointer;
+  color: #48a0b5;
+}
+
+/* main page contents */
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  margin: 40px 0;
+}
+
+.homepage-texts {
+  max-width: 50%;
+  padding: 40px 40px 30px 0;
+}
+
+/* main homepage heading */
+.homepage-heading,
+.homepage-heading span {
+  font-size: 45px;
+  font-weight: 500;
+  font-family: "Rubik Wet Paint", system-ui;
+}
+
+.homepage-heading span {
+  color: #48a0b5;
+}
+
+/* homepage paragraph */
+.homepage-desc {
+  margin: 15px 0;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(56, 56, 56);
+}
+
+/* homepage buttons */
+.homepage-buttons {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+.hp-button {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 1px solid #eb71a4;
+  background-color: white;
+  color: #b10e52;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+.hp-button:hover {
+  cursor: pointer;
+  background-color: #b10e52;
+  color: white;
+}
+
+/* homepage dog image */
+.main-page-image {
+  margin-top: 25px;
+}
+
+.dog-image {
+  margin-bottom: -35px;
+  max-width: 350px;
+}
