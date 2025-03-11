@@ -7,6 +7,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* custom properties */
 :root {
   --gradient-bg: linear-gradient(148deg, #dcf3f7 35%, #eddef9 81%);
@@ -467,4 +471,58 @@ nav ul li:hover {
     justify-content: center;
     text-align: center;
   }
+}
+
+
+/* ////////// */
+/* Contact Us */
+/* ////////// */
+.contact-us {
+    background-color: #dcf3f7;
+}
+.contact-head {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-heading {
+    font-size: 30px;
+    font-weight: 500;
+    color: #383838;
+    margin: 40px 0 0 0;
+}
+
+.contact-desc {
+    margin: 20px 0;
+}
+
+.contact-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+
+.card-detail {
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 15px 0;
+    border-radius: 15px;
+    border: 1px solid #b10e52;
+    transition: all 0.2s ease-in-out;
+}
+.card-detail img {
+    width: 70px;
+}
+.card-detail:hover {
+    cursor: pointer;
+    border: 2px solid #b10e52;
 }
