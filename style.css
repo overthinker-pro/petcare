@@ -198,56 +198,184 @@ nav ul li:hover {
   width: 30px;
 }
 
-
 /* //////////////////////// */
 /* About page main content */
 /* ////////////////////// */
 .about-main-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 30px;
-    gap: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 30px;
+  gap: 30px;
 }
 
 .about-image {
-    max-width: 250px;
+  max-width: 250px;
 }
 
 /* about main page texts div */
 .about-texts {
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 .about-heading {
-    font-size: 30px;
-    letter-spacing: 1px;
-    margin: 30px 0 15px 0;
-    color: #0e0e0e;
+  font-size: 30px;
+  letter-spacing: 1px;
+  margin: 30px 0 15px 0;
+  color: #0e0e0e;
 }
 .about.desc {
-    color: #383838;
+  color: #383838;
 }
 
 /* responsiveness for about page and about top bar*/
-@media (max-width: 900px){
-    .about-navigation  {
-        display: flex;
-        flex-direction: column;
-    }
-    .about-main-content {
+@media (max-width: 900px) {
+  .about-navigation {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .about-texts {
+    text-align: justify;
+  }
+  .about.desc {
+    margin: 0 25px;
+  }
+}
+
+/* /////////////////// */
+/* Services section.. */
+/* ///////////////// */
+.service-section-head {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 0 0 150px;
+}
+
+.service-heading {
+  font-size: 30px;
+  color: #383838;
+  margin: 30px 0 20px 0;
+}
+
+/* service section buttons */
+.service-head-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 10px 0 40px 0;
+}
+.sh-button {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 1px solid #eb71a4;
+  background-color: white;
+  color: #b10e52;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+.sh-button:hover {
+  cursor: pointer;
+  background-color: #b10e52;
+  color: white;
+}
+
+/* heading, paragraph and image below the OUR SERVICE heading and buttons */
+.service-section-contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 30px;
+}
+
+.service-section-texts {
+  max-width: 500px;
+  padding: 30px;
+  /* background-color: #eb71a4; */
+}
+.service-section-heading {
+  font-size: 25px;
+  font-weight: 500;
+}
+.service-section-desc {
+  color: #383838;
+  margin: 20px 0;
+}
+
+.know-more-service {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 1px solid #eb71a4;
+  background-color: white;
+  color: #b10e52;
+  font-weight: 500;
+  margin: 20px 0;
+  transition: all 0.3s ease-in-out;
+}
+.know-more-service:hover {
+  cursor: pointer;
+  background-color: #b10e52;
+  color: white;
+}
+
+.service-sect-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  box-shadow: 1px 1px 3px #eb71a45c;
+  border: 1px solid #eb71a4;
+  border-radius: 15px;
+}
+
+.ss-image {
+  max-width: 350px;
+  overflow: visible;
+}
+
+/* service section responsiveness */
+@media (max-width: 1000px) {
+    .service-section-head {
+        padding: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 5px;
+        justify-content: center;
     }
-    .about-texts {
-        text-align: justify;
+    .service-section-contents {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
     }
-    .about.desc {
-        margin: 0 25px;
+    .service-section-texts {
+        text-align: center;
+    }
+
+    /* resizing the image container */
+    .service-sect-image {
+        width: 300px;
+        height: 300px;
+    }
+    .ss-image {
+        max-width: 400px;
+    }
+    .know-more-service {
+        margin: 10px 0 0 0;
     }
 }
