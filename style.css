@@ -9,14 +9,12 @@
 
 /* custom properties */
 :root {
-  --gradient-bg: linear-gradient(
-    148deg,
-    rgba(220, 243, 247, 1) 35%,
-    rgba(237, 222, 249, 1) 81%
-  );
+  --gradient-bg: linear-gradient(148deg, #dcf3f7 35%, #eddef9 81%);
 }
 
-/* Home page contents */
+/* ////////// */
+/* Home page */
+/* //////// */
 .homepage {
   background: var(--gradient-bg);
 }
@@ -53,7 +51,7 @@ nav ul li:hover {
 
 /* hiding the hamburger menu in bigger screens */
 .hamburger-menu {
-    display: none;
+  display: none;
 }
 
 /* main page contents */
@@ -62,7 +60,7 @@ nav ul li:hover {
   flex-direction: row;
   justify-content: center;
   gap: 50px;
-  margin: 40px 0;
+  margin: 40px 0 0 0;
 }
 
 .homepage-texts {
@@ -116,11 +114,11 @@ nav ul li:hover {
 
 /* homepage dog image */
 .main-page-image {
-  margin-top: 25px;
+  margin-top: 40px;
 }
 
 .dog-image {
-  margin-bottom: -35px;
+  margin: 0 0 -10px 0;
   max-width: 350px;
 }
 
@@ -133,13 +131,19 @@ nav ul li:hover {
     align-items: center;
     gap: 10px;
   }
-  
+
+  /* hiding the list in small screens and making the hamburger visible */
   ul li {
     display: none;
   }
   .hamburger-menu {
     display: flex;
     font-size: 30px;
+    transition: all 0.2s linear;
+  }
+  .hamburger-menu:hover {
+    cursor: pointer;
+    color: rgb(48, 48, 188);
   }
 
   .homepage-texts {
@@ -153,4 +157,45 @@ nav ul li:hover {
     margin-top: 0;
     border: 1px solid;
   }
+}
+
+/* /////////// */
+/* About Page */
+/* ///////// */
+.about-page {
+  background-color: yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.about-navigation {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  padding: 20px;
+  min-width: 60%;
+  margin: 40px 0 30px 0;
+  gap: 20px;
+  background: var(--gradient-bg);
+}
+
+.about-nav-card {
+  flex: 1;
+  display: flex;
+  padding: 10px 20px;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: white;
+  align-items: center;
+  font-weight: 500;
+  transition: all 0.2s linear;
+}
+.about-nav-card:hover {
+  box-shadow: 2px 2px 6px #3f3f3f78;
+  background-color: #dcf3f7;
+  cursor: pointer;
+}
+.about-nav-card img {
+  width: 30px;
 }
