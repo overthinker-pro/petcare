@@ -388,16 +388,25 @@ nav ul li:hover {
   flex-direction: row;
   justify-content: center;
 }
+
 .user-review-card {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  gap: 20px;
   padding: 20px;
   min-width: 80%;
   border-radius: 25px;
   box-shadow: 2px 2px 19px #696969;
   margin: 30px 40px;
+}
+
+.review-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex: 2;
 }
 
 .review-person {
@@ -410,6 +419,22 @@ nav ul li:hover {
 .review-person-image {
   max-width: 200px;
 }
+
+
+
+.experience h4 {
+    color: #383838;
+}
+
+.experience p {
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.rating i {
+    font-size: 13px;
+}
+
 
 .scroller {
   width: 50px;
