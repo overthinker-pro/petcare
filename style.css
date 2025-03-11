@@ -378,6 +378,9 @@ nav ul li:hover {
   .know-more-service {
     margin: 10px 0 0 0;
   }
+  .service-head-buttons {
+    gap: 10px;
+  }
 }
 
 /* //////////// */
