@@ -479,7 +479,6 @@ nav ul li:hover {
 /* ////////// */
 .contact-us {
     background-color: #f0fdff;
-    margin-bottom: 50px;
 }
 .contact-head {
     width: 100%;
@@ -535,4 +534,15 @@ nav ul li:hover {
         align-items: center;
         justify-content: center;
     }
+}
+
+/* Footer section */
+.conclusion {
+  text-align: center;
+  padding: 20px;
+  background-color: #48a0b5;
+}
+.conclusion p {
+  font-size: 15px;
+  color: #dcf3f7;
 }
